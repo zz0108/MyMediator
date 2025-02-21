@@ -1,0 +1,59 @@
+# Visual Studio-specific ignores
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build and output directories
+bin/
+obj/
+out/
+Debug/
+Release/
+TestResults/
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Rider / JetBrains IDE
+.idea/
+*.sln.iml
+
+# Resharper
+*.DotSettings.user
+*.ReSharper/
+
+# Temporary files
+*.log
+*.tlog
+*.cache
+*.pdb
+*.ilk
+*.swp
+*.bak
+*.orig
+*.tmp
+
+# .NET Core
+*.db
+*.db-shm
+*.db-wal
+
+# Entity Framework
+Migrations/
+*.mdf
+*.ldf
+
+# Secrets and config files
+secrets.json
+appsettings.*.json
+
+# Misc
+*.ncrunch*
+*.coverage
+*.testsettings
+*.vsix
