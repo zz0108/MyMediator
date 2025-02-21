@@ -30,6 +30,26 @@ public class MediatorTests
         Assert.That(handler, Is.TypeOf<TestHandler>());
     }
     
+    [Test]
+    public async Task Send_ShouldReturnResponse()
+    {
+        // Arrange
+        var mediator = _provider.GetService<IMediator>();
+        
+        if (mediator is null)
+        {
+            Assert.Fail("Mediator is null");
+            return;
+        }
+        
+        // Act
+        var response = await mediator.Send(new TestRequest());
+        
+        // Assert
+        Assert.That(response, Is.Not.Null);
+        Assert.That(response.Message, Is.EqualTo("Test"));
+    }
+    
     [OneTimeTearDown]
     public void TearDown()
     {
