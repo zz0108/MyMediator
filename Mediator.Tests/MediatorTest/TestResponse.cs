@@ -1,4 +1,4 @@
-﻿namespace Mediator.Tests;
+﻿namespace Mediator.Tests.MediatorTest;
 
 public class TestResponse
 {

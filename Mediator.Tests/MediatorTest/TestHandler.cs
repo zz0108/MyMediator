@@ -1,6 +1,6 @@
 ﻿using Mediator.Abstractions;
 
-namespace Mediator.Tests;
+namespace Mediator.Tests.MediatorTest;
 
 public class TestHandler : IRequestHandler<TestRequest, TestResponse>
 {
